@@ -3,7 +3,8 @@ Cowboy Bebop meets Minecraft.
 
 Coding convention mostly follows stuff on GeoSoft (google it):
 2-space indent, no tabs.
-`public class Test
+```java
+public class Test
 {
   // constants are all capital with _
   public static final int SOME_CONSTANT = 24;
@@ -44,4 +45,4 @@ Coding convention mostly follows stuff on GeoSoft (google it):
   {
     return true;
   }
-}`
+}```
