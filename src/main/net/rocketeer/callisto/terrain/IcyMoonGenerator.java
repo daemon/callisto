@@ -3,10 +3,13 @@ package net.rocketeer.callisto.terrain;
 import org.bukkit.Material;
 import org.bukkit.World;
 import org.bukkit.block.Biome;
+import org.bukkit.generator.BlockPopulator;
 import org.bukkit.generator.ChunkGenerator;
 import org.bukkit.util.noise.NoiseGenerator;
 import org.bukkit.util.noise.SimplexNoiseGenerator;
 
+import java.util.Collections;
+import java.util.List;
 import java.util.Random;
 
 public class IcyMoonGenerator extends ChunkGenerator
@@ -37,5 +40,11 @@ public class IcyMoonGenerator extends ChunkGenerator
       }
 
     return chunk;
+  }
+
+  @Override
+  public List<BlockPopulator> getDefaultPopulators(World world)
+  {
+    return Collections.singletonList(new CraterPopulator());
   }
 }
