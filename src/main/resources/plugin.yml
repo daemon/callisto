@@ -1,9 +1,10 @@
-name: Callisto
+name: callisto
+load: startup
 main: net.rocketeer.callisto.CallistoPlugin
 version: 0.1.0
 commands:
-   callisto:
-      description: Base command for all MCEX-related things. Do /mcex help for more information.
-      usage: /mcex
-      permission: mcex.cmd
-      permission-message: No permission.
+  callisto:
+    description: Base command for all MCEX-related things. Do /mcex help for more information.
+    usage: /mcex
+    permission: mcex.cmd
+    permission-message: No permission.

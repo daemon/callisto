@@ -1,7 +1,7 @@
 apply plugin: 'idea'
 apply plugin: 'java'
 
-version = '0.1'
+version = '0.1.0'
 
 repositories {
     mavenCentral()
@@ -33,7 +33,7 @@ task fatJar(type: Jar) {
 dependencies {
     compile group: 'mysql', name: 'mysql-connector-java', version: '5.+'
     compile group: 'com.mchange', name: 'c3p0', version: '0.9.5.1'
-    compile name: 'spigot-api-1.8.8'
+    compile name: 'bukkit-1.8-R0.1-SNAPSHOT'
 }
 
 buildDir = 'bin'
